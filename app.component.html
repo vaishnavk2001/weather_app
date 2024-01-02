@@ -1,0 +1,60 @@
+<body class="container-fluid d-flex justify-content-center">
+  <div class="container">
+    <div class="upper-data">
+      <img src="../assets/cold.jpg"  *ngIf="14 < 15" >
+      <img src="../assets/25501.jpg" *ngIf="14 > 15" >
+      <div class="weather-data">
+        <div class="location">Kerala</div>
+        <div class="temperature">{{25.50 | number: '1.0-0'}}°C</div>
+      </div>
+    </div>
+    <div class="lower-data">
+      <div class="more-info-label m-2">
+        More Information
+      </div>
+      <div class="more-info-container">
+          <div class="more-info-block">
+            <div class="info-block">
+              <div class="info-block-label"> 
+                <i class="fa-solid fa-temperature-low icon"></i>
+                <span>Min</span>
+              </div>
+              <div class="info-block-value">
+                  10°C
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-block-label"> 
+                <i class="fa-solid fa-temperature-full icon"></i>
+                <span>Max</span>
+              </div>
+              <div class="info-block-value">
+                  10°C
+              </div>
+            </div>
+          </div>
+          <div class="more-info-block mb-2">
+            <div class="info-block">
+              <div class="info-block-label"> 
+                <i class="fa-solid fa-hot-tub-person icon"></i>
+                <span>humidity</span>
+              </div>
+              <div class="info-block-value">
+                  77 %
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-block-label"> 
+                <i class="fa-solid fa-wind icon"></i>
+                <span>wind</span>
+              </div>
+              <div class="info-block-value">
+                  11.83 Km/h
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+  <router-outlet></router-outlet>
