@@ -1,5 +1,9 @@
-<body class="container-fluid d-flex justify-content-center">
-  <div class="container">
+<body class="container-fluid d-flex flex-column ">
+  <div class="search d-flex flex-row">
+      <input class="form-control text-center" type="text" placeholder="Enter city">
+      <button class="btn btn-success p-1 ms-3" type="submit">Search</button>
+  </div>
+  <div class="container mt-2">
     <div class="upper-data">
       <img src="../assets/cold.jpg"  *ngIf="14 < 15" >
       <img src="../assets/25501.jpg" *ngIf="14 > 15" >
